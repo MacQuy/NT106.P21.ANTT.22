@@ -90,12 +90,6 @@
     <Compile Include="RoomForm.Designer.cs">
       <DependentUpon>RoomForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SoloModeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SoloModeForm.Designer.cs">
-      <DependentUpon>SoloModeForm.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,7 +104,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -124,6 +122,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\LoginForm\Password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\LoginForm\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\LoginForm\ChessIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\RegisterForm\Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\RegisterForm\Avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\General\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\General\Back.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
