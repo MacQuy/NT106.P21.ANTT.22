@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NT106
 {
-    public partial class Form1 : Form
+    public partial class HomepageForm : Form
     {
-        public Form1()
+        public HomepageForm()
         {
             InitializeComponent();
         }
