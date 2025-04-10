@@ -37,6 +37,7 @@ namespace NT106
             this.GgRegButton = new Guna.UI2.WinForms.Guna2Button();
             this.ConfirmTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.AvatarButton = new Guna.UI2.WinForms.Guna2Button();
+            this.NicknameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.BackButton = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ExitButton = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -44,7 +45,6 @@ namespace NT106
             this.CheckImg = new Guna.UI2.WinForms.Guna2PictureBox();
             this.UserImg = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PassImg = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.NicknameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.BackButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -182,6 +182,27 @@ namespace NT106
             this.AvatarButton.TabIndex = 11;
             this.AvatarButton.Text = "Upload your avatar";
             // 
+            // NicknameTextBox
+            // 
+            this.NicknameTextBox.BorderRadius = 10;
+            this.NicknameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NicknameTextBox.DefaultText = "";
+            this.NicknameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.NicknameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.NicknameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NicknameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NicknameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NicknameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.NicknameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NicknameTextBox.Location = new System.Drawing.Point(437, 288);
+            this.NicknameTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.NicknameTextBox.Name = "NicknameTextBox";
+            this.NicknameTextBox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.NicknameTextBox.PlaceholderText = "Nickname";
+            this.NicknameTextBox.SelectedText = "";
+            this.NicknameTextBox.Size = new System.Drawing.Size(200, 39);
+            this.NicknameTextBox.TabIndex = 17;
+            // 
             // BackButton
             // 
             this.BackButton.Image = global::NT106.Properties.Resources.Back;
@@ -266,27 +287,6 @@ namespace NT106
             this.PassImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PassImg.TabIndex = 7;
             this.PassImg.TabStop = false;
-            // 
-            // NicknameTextBox
-            // 
-            this.NicknameTextBox.BorderRadius = 10;
-            this.NicknameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NicknameTextBox.DefaultText = "";
-            this.NicknameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.NicknameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.NicknameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.NicknameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.NicknameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NicknameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.NicknameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NicknameTextBox.Location = new System.Drawing.Point(437, 288);
-            this.NicknameTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.NicknameTextBox.Name = "NicknameTextBox";
-            this.NicknameTextBox.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.NicknameTextBox.PlaceholderText = "Nickname";
-            this.NicknameTextBox.SelectedText = "";
-            this.NicknameTextBox.Size = new System.Drawing.Size(200, 39);
-            this.NicknameTextBox.TabIndex = 17;
             // 
             // RegisterForm
             // 

@@ -99,6 +99,9 @@
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProfileForm.resx">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -197,6 +200,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\GameForm\wr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\ProfileForm\Fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\ProfileForm\Handshake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\ProfileForm\Boring.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
