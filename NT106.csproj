@@ -144,5 +144,53 @@
   <ItemGroup>
     <None Include="img\General\Back.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\Mic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\Chishiya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\Arisu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\Kuzuryu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\bb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\bk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\bn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\bp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\bq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\br.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\wb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\wk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\wn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\wp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\wq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\wr.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
