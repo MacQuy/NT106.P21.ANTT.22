@@ -34,7 +34,6 @@ namespace NT106
             this.Title = new System.Windows.Forms.Label();
             this.PasswordTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.RegisterButton = new Guna.UI2.WinForms.Guna2Button();
-            this.GgRegButton = new Guna.UI2.WinForms.Guna2Button();
             this.ConfirmTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.AvatarButton = new Guna.UI2.WinForms.Guna2Button();
             this.NicknameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -125,23 +124,6 @@ namespace NT106
             this.RegisterButton.Size = new System.Drawing.Size(135, 37);
             this.RegisterButton.TabIndex = 5;
             this.RegisterButton.Text = "Register";
-            // 
-            // GgRegButton
-            // 
-            this.GgRegButton.BorderRadius = 10;
-            this.GgRegButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GgRegButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GgRegButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GgRegButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GgRegButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
-            this.GgRegButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.GgRegButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(241)))));
-            this.GgRegButton.Location = new System.Drawing.Point(477, 379);
-            this.GgRegButton.Margin = new System.Windows.Forms.Padding(2);
-            this.GgRegButton.Name = "GgRegButton";
-            this.GgRegButton.Size = new System.Drawing.Size(135, 37);
-            this.GgRegButton.TabIndex = 6;
-            this.GgRegButton.Text = "Register with Google";
             // 
             // ConfirmTextBox
             // 
@@ -304,7 +286,6 @@ namespace NT106
             this.Controls.Add(this.ConfirmTextBox);
             this.Controls.Add(this.UserImg);
             this.Controls.Add(this.PassImg);
-            this.Controls.Add(this.GgRegButton);
             this.Controls.Add(this.RegisterButton);
             this.Controls.Add(this.PasswordTextbox);
             this.Controls.Add(this.Title);
@@ -331,7 +312,6 @@ namespace NT106
         private Label Title;
         private Guna.UI2.WinForms.Guna2TextBox PasswordTextbox;
         private Guna.UI2.WinForms.Guna2Button RegisterButton;
-        private Guna.UI2.WinForms.Guna2Button GgRegButton;
         private Guna.UI2.WinForms.Guna2PictureBox PassImg;
         private Guna.UI2.WinForms.Guna2PictureBox UserImg;
         private Guna.UI2.WinForms.Guna2TextBox ConfirmTextBox;

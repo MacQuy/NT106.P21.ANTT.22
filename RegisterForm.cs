@@ -12,9 +12,11 @@ namespace NT106
 {
     public partial class RegisterForm : Form
     {
-        public RegisterForm()
+        private Form previous;
+        public RegisterForm(Form previous)
         {
             InitializeComponent();
+            this.previous = previous;
         }
     }
 }

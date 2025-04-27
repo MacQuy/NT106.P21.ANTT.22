@@ -16,5 +16,17 @@ namespace NT106
         {
             InitializeComponent();
         }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void RegisterButton_Click(object sender, EventArgs e)
+        {
+            RegisterForm registerForm = new RegisterForm(this);
+            this.Hide();
+            registerForm.Show();
+        }
     }
 }
