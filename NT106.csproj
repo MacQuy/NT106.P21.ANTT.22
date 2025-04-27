@@ -210,5 +210,8 @@
   <ItemGroup>
     <None Include="img\ProfileForm\Boring.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\Mute.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
