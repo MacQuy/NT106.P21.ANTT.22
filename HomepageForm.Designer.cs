@@ -157,6 +157,7 @@
             this.SingleButton.Size = new System.Drawing.Size(200, 100);
             this.SingleButton.TabIndex = 19;
             this.SingleButton.Text = "Singleplayer mode";
+            this.SingleButton.Click += new System.EventHandler(this.SingleButton_Click);
             // 
             // MultiButton
             // 
@@ -174,6 +175,7 @@
             this.MultiButton.Size = new System.Drawing.Size(200, 100);
             this.MultiButton.TabIndex = 20;
             this.MultiButton.Text = "Multiplayer mode";
+            this.MultiButton.Click += new System.EventHandler(this.MultiButton_Click);
             // 
             // guna2CirclePictureBox1
             // 
@@ -186,6 +188,7 @@
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 15;
             this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
             // ExitButton
             // 
@@ -198,6 +201,7 @@
             this.ExitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ExitButton.TabIndex = 13;
             this.ExitButton.TabStop = false;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // ChessIcon
             // 

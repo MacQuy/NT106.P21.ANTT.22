@@ -12,9 +12,11 @@ namespace NT106
 {
     public partial class ProfileForm : Form
     {
-        public ProfileForm()
+        private Form previous;
+        public ProfileForm(Form previous)
         {
             InitializeComponent();
+            this.previous = previous;
         }
     }
 }

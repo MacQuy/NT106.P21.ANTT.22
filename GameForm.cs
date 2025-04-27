@@ -12,10 +12,12 @@ namespace NT106
 {
     public partial class GameForm : Form
     {
-        public GameForm()
+        private Form previous;
+        public GameForm(Form previous)
         {
             InitializeComponent();
             DisableChessCell();
+            this.previous = previous;
         }
 
         private void MicButton_Click(object sender, EventArgs e)

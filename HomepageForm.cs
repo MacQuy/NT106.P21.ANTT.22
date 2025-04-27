@@ -16,5 +16,31 @@ namespace NT106
         {
             InitializeComponent();
         }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void SingleButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GameForm game = new GameForm(this);
+            game.Show();
+        }
+
+        private void MultiButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RoomForm roomForm = new RoomForm(this);
+            roomForm.Show();
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ProfileForm profileForm = new ProfileForm(this);
+            profileForm.Show();
+        }
     }
 }

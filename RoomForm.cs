@@ -12,9 +12,11 @@ namespace NT106
 {
     public partial class RoomForm : Form
     {
-        public RoomForm()
+        private Form previous;
+        public RoomForm(Form previous)
         {
             InitializeComponent();
+            this.previous = previous;
         }
     }
 }
