@@ -18,5 +18,16 @@ namespace NT106
             InitializeComponent();
             this.previous = previous;
         }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            previous.Show();
+        }
     }
 }

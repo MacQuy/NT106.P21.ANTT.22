@@ -65,13 +65,13 @@ namespace NT106
             this.UsernameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UsernameTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.UsernameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UsernameTextbox.Location = new System.Drawing.Point(83, 88);
-            this.UsernameTextbox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.UsernameTextbox.Location = new System.Drawing.Point(111, 108);
+            this.UsernameTextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.UsernameTextbox.Name = "UsernameTextbox";
             this.UsernameTextbox.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.UsernameTextbox.PlaceholderText = "Username";
             this.UsernameTextbox.SelectedText = "";
-            this.UsernameTextbox.Size = new System.Drawing.Size(317, 39);
+            this.UsernameTextbox.Size = new System.Drawing.Size(423, 48);
             this.UsernameTextbox.TabIndex = 1;
             // 
             // Title
@@ -79,10 +79,9 @@ namespace NT106
             this.Title.AutoSize = true;
             this.Title.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Title.Location = new System.Drawing.Point(9, 7);
-            this.Title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Title.Location = new System.Drawing.Point(12, 9);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(169, 57);
+            this.Title.Size = new System.Drawing.Size(208, 72);
             this.Title.TabIndex = 3;
             this.Title.Text = "Register";
             // 
@@ -98,14 +97,14 @@ namespace NT106
             this.PasswordTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PasswordTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.PasswordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PasswordTextbox.Location = new System.Drawing.Point(83, 150);
-            this.PasswordTextbox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.PasswordTextbox.Location = new System.Drawing.Point(111, 185);
+            this.PasswordTextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PasswordTextbox.Name = "PasswordTextbox";
             this.PasswordTextbox.PasswordChar = '*';
             this.PasswordTextbox.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.PasswordTextbox.PlaceholderText = "Password";
             this.PasswordTextbox.SelectedText = "";
-            this.PasswordTextbox.Size = new System.Drawing.Size(317, 39);
+            this.PasswordTextbox.Size = new System.Drawing.Size(423, 48);
             this.PasswordTextbox.TabIndex = 4;
             // 
             // RegisterButton
@@ -118,10 +117,10 @@ namespace NT106
             this.RegisterButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
             this.RegisterButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.RegisterButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(241)))));
-            this.RegisterButton.Location = new System.Drawing.Point(266, 379);
-            this.RegisterButton.Margin = new System.Windows.Forms.Padding(2);
+            this.RegisterButton.Location = new System.Drawing.Point(355, 466);
+            this.RegisterButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RegisterButton.Name = "RegisterButton";
-            this.RegisterButton.Size = new System.Drawing.Size(135, 37);
+            this.RegisterButton.Size = new System.Drawing.Size(180, 46);
             this.RegisterButton.TabIndex = 5;
             this.RegisterButton.Text = "Register";
             // 
@@ -137,14 +136,14 @@ namespace NT106
             this.ConfirmTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ConfirmTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ConfirmTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ConfirmTextBox.Location = new System.Drawing.Point(83, 211);
-            this.ConfirmTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.ConfirmTextBox.Location = new System.Drawing.Point(111, 260);
+            this.ConfirmTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ConfirmTextBox.Name = "ConfirmTextBox";
             this.ConfirmTextBox.PasswordChar = '*';
             this.ConfirmTextBox.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.ConfirmTextBox.PlaceholderText = "Enter password again";
             this.ConfirmTextBox.SelectedText = "";
-            this.ConfirmTextBox.Size = new System.Drawing.Size(317, 39);
+            this.ConfirmTextBox.Size = new System.Drawing.Size(423, 48);
             this.ConfirmTextBox.TabIndex = 9;
             // 
             // AvatarButton
@@ -157,10 +156,10 @@ namespace NT106
             this.AvatarButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
             this.AvatarButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.AvatarButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(241)))));
-            this.AvatarButton.Location = new System.Drawing.Point(83, 288);
-            this.AvatarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.AvatarButton.Location = new System.Drawing.Point(111, 354);
+            this.AvatarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AvatarButton.Name = "AvatarButton";
-            this.AvatarButton.Size = new System.Drawing.Size(135, 37);
+            this.AvatarButton.Size = new System.Drawing.Size(180, 46);
             this.AvatarButton.TabIndex = 11;
             this.AvatarButton.Text = "Upload your avatar";
             // 
@@ -176,47 +175,52 @@ namespace NT106
             this.NicknameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.NicknameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.NicknameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NicknameTextBox.Location = new System.Drawing.Point(437, 288);
-            this.NicknameTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.NicknameTextBox.Location = new System.Drawing.Point(583, 354);
+            this.NicknameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NicknameTextBox.Name = "NicknameTextBox";
             this.NicknameTextBox.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.NicknameTextBox.PlaceholderText = "Nickname";
             this.NicknameTextBox.SelectedText = "";
-            this.NicknameTextBox.Size = new System.Drawing.Size(200, 39);
+            this.NicknameTextBox.Size = new System.Drawing.Size(267, 48);
             this.NicknameTextBox.TabIndex = 17;
             // 
             // BackButton
             // 
             this.BackButton.Image = global::NT106.Properties.Resources.Back;
             this.BackButton.ImageRotate = 0F;
-            this.BackButton.Location = new System.Drawing.Point(19, 386);
+            this.BackButton.Location = new System.Drawing.Point(25, 475);
+            this.BackButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BackButton.Name = "BackButton";
             this.BackButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.BackButton.Size = new System.Drawing.Size(30, 30);
+            this.BackButton.Size = new System.Drawing.Size(40, 37);
             this.BackButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BackButton.TabIndex = 16;
             this.BackButton.TabStop = false;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // ExitButton
             // 
             this.ExitButton.Image = global::NT106.Properties.Resources.Exit;
             this.ExitButton.ImageRotate = 0F;
-            this.ExitButton.Location = new System.Drawing.Point(632, 12);
+            this.ExitButton.Location = new System.Drawing.Point(843, 15);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.ExitButton.Size = new System.Drawing.Size(30, 30);
+            this.ExitButton.Size = new System.Drawing.Size(40, 37);
             this.ExitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ExitButton.TabIndex = 15;
             this.ExitButton.TabStop = false;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::NT106.Properties.Resources.Avatar;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(437, 75);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(583, 92);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(267, 246);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 14;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -225,10 +229,10 @@ namespace NT106
             // 
             this.ChessIcon.Image = global::NT106.Properties.Resources.ChessIcon;
             this.ChessIcon.ImageRotate = 0F;
-            this.ChessIcon.Location = new System.Drawing.Point(171, 7);
-            this.ChessIcon.Margin = new System.Windows.Forms.Padding(2);
+            this.ChessIcon.Location = new System.Drawing.Point(228, 9);
+            this.ChessIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChessIcon.Name = "ChessIcon";
-            this.ChessIcon.Size = new System.Drawing.Size(54, 58);
+            this.ChessIcon.Size = new System.Drawing.Size(72, 71);
             this.ChessIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ChessIcon.TabIndex = 13;
             this.ChessIcon.TabStop = false;
@@ -237,10 +241,10 @@ namespace NT106
             // 
             this.CheckImg.Image = global::NT106.Properties.Resources.Check;
             this.CheckImg.ImageRotate = 0F;
-            this.CheckImg.Location = new System.Drawing.Point(18, 211);
-            this.CheckImg.Margin = new System.Windows.Forms.Padding(2);
+            this.CheckImg.Location = new System.Drawing.Point(24, 260);
+            this.CheckImg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CheckImg.Name = "CheckImg";
-            this.CheckImg.Size = new System.Drawing.Size(36, 39);
+            this.CheckImg.Size = new System.Drawing.Size(48, 48);
             this.CheckImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CheckImg.TabIndex = 10;
             this.CheckImg.TabStop = false;
@@ -250,10 +254,10 @@ namespace NT106
             this.UserImg.BackColor = System.Drawing.Color.Transparent;
             this.UserImg.Image = global::NT106.Properties.Resources.User;
             this.UserImg.ImageRotate = 0F;
-            this.UserImg.Location = new System.Drawing.Point(18, 88);
-            this.UserImg.Margin = new System.Windows.Forms.Padding(2);
+            this.UserImg.Location = new System.Drawing.Point(24, 108);
+            this.UserImg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UserImg.Name = "UserImg";
-            this.UserImg.Size = new System.Drawing.Size(36, 39);
+            this.UserImg.Size = new System.Drawing.Size(48, 48);
             this.UserImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.UserImg.TabIndex = 8;
             this.UserImg.TabStop = false;
@@ -262,20 +266,20 @@ namespace NT106
             // 
             this.PassImg.Image = global::NT106.Properties.Resources.Password;
             this.PassImg.ImageRotate = 0F;
-            this.PassImg.Location = new System.Drawing.Point(18, 150);
-            this.PassImg.Margin = new System.Windows.Forms.Padding(2);
+            this.PassImg.Location = new System.Drawing.Point(24, 185);
+            this.PassImg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PassImg.Name = "PassImg";
-            this.PassImg.Size = new System.Drawing.Size(36, 39);
+            this.PassImg.Size = new System.Drawing.Size(48, 48);
             this.PassImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PassImg.TabIndex = 7;
             this.PassImg.TabStop = false;
             // 
             // RegisterForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(674, 435);
+            this.ClientSize = new System.Drawing.Size(899, 535);
             this.Controls.Add(this.NicknameTextBox);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.ExitButton);
@@ -291,7 +295,7 @@ namespace NT106
             this.Controls.Add(this.Title);
             this.Controls.Add(this.UsernameTextbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
