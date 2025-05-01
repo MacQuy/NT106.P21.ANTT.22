@@ -25,7 +25,7 @@ namespace NT106
         private void SingleButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            GameForm game = new GameForm(this);
+            GameForm game = new GameForm();
             game.Show();
         }
 

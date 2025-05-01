@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +13,14 @@ namespace NT106
 {
     public partial class GameForm : Form
     {
-        private Form previous;
-        public GameForm(Form previous)
+        private ChessLogic Logic;
+        public GameForm()
         {
             InitializeComponent();
             DisableChessCell();
-            this.previous = previous;
+
+            Logic = new ChessLogic(this);
+            AddResponsive();
         }
 
         private void MicButton_Click(object sender, EventArgs e)

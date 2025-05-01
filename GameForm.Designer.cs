@@ -145,6 +145,8 @@ namespace NT106
             this.guna2PictureBox32 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox33 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.MicButton = new Guna.UI2.WinForms.Guna2Button();
+            this.Dot = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.CircleChess = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -1766,12 +1768,50 @@ namespace NT106
             this.MicButton.UseTransparentBackground = true;
             this.MicButton.Click += new System.EventHandler(this.MicButton_Click);
             // 
+            // Dot
+            // 
+            this.Dot.BackColor = System.Drawing.Color.Transparent;
+            this.Dot.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Dot.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Dot.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Dot.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Dot.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Dot.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Dot.ForeColor = System.Drawing.Color.White;
+            this.Dot.Location = new System.Drawing.Point(100, 466);
+            this.Dot.Name = "Dot";
+            this.Dot.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.Dot.Size = new System.Drawing.Size(21, 21);
+            this.Dot.TabIndex = 120;
+            this.Dot.UseTransparentBackground = true;
+            // 
+            // CircleChess
+            // 
+            this.CircleChess.BackColor = System.Drawing.Color.Transparent;
+            this.CircleChess.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CircleChess.BorderThickness = 4;
+            this.CircleChess.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.CircleChess.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.CircleChess.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.CircleChess.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.CircleChess.FillColor = System.Drawing.Color.Transparent;
+            this.CircleChess.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.CircleChess.ForeColor = System.Drawing.Color.White;
+            this.CircleChess.Location = new System.Drawing.Point(75, 365);
+            this.CircleChess.Name = "CircleChess";
+            this.CircleChess.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.CircleChess.Size = new System.Drawing.Size(75, 75);
+            this.CircleChess.TabIndex = 121;
+            this.CircleChess.UseTransparentBackground = true;
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1166, 718);
+            this.Controls.Add(this.CircleChess);
+            this.Controls.Add(this.Dot);
             this.Controls.Add(this.MicButton);
             this.Controls.Add(this.guna2PictureBox33);
             this.Controls.Add(this.guna2PictureBox32);
@@ -1946,6 +1986,17 @@ namespace NT106
             }
         }
 
+        private void AddResponsive()
+        {
+            foreach (var item in this.Controls)
+            {
+                if (item is Guna2PictureBox chess)
+                {
+                    chess.Click += Logic.ShowMove;
+                }
+            }
+        }
+
         #endregion
 
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
@@ -2062,5 +2113,7 @@ namespace NT106
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox33;
         private Guna.UI2.WinForms.Guna2Button MicButton;
         private bool isOnMic = true;
+        private Guna2CircleButton Dot;
+        private Guna2CircleButton CircleChess;
     }
 }
