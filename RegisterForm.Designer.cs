@@ -36,7 +36,6 @@ namespace NT106
             this.RegisterButton = new Guna.UI2.WinForms.Guna2Button();
             this.ConfirmTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.AvatarButton = new Guna.UI2.WinForms.Guna2Button();
-            this.NicknameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.BackButton = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ExitButton = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -156,40 +155,19 @@ namespace NT106
             this.AvatarButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
             this.AvatarButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.AvatarButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(241)))));
-            this.AvatarButton.Location = new System.Drawing.Point(111, 354);
+            this.AvatarButton.Location = new System.Drawing.Point(616, 360);
             this.AvatarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AvatarButton.Name = "AvatarButton";
             this.AvatarButton.Size = new System.Drawing.Size(180, 46);
             this.AvatarButton.TabIndex = 11;
             this.AvatarButton.Text = "Upload your avatar";
             // 
-            // NicknameTextBox
-            // 
-            this.NicknameTextBox.BorderRadius = 10;
-            this.NicknameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NicknameTextBox.DefaultText = "";
-            this.NicknameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.NicknameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.NicknameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.NicknameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.NicknameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NicknameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.NicknameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NicknameTextBox.Location = new System.Drawing.Point(583, 354);
-            this.NicknameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.NicknameTextBox.Name = "NicknameTextBox";
-            this.NicknameTextBox.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.NicknameTextBox.PlaceholderText = "Nickname";
-            this.NicknameTextBox.SelectedText = "";
-            this.NicknameTextBox.Size = new System.Drawing.Size(267, 48);
-            this.NicknameTextBox.TabIndex = 17;
-            // 
             // BackButton
             // 
             this.BackButton.Image = global::NT106.Properties.Resources.Back;
             this.BackButton.ImageRotate = 0F;
             this.BackButton.Location = new System.Drawing.Point(25, 475);
-            this.BackButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BackButton.Margin = new System.Windows.Forms.Padding(4);
             this.BackButton.Name = "BackButton";
             this.BackButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.BackButton.Size = new System.Drawing.Size(40, 37);
@@ -203,7 +181,7 @@ namespace NT106
             this.ExitButton.Image = global::NT106.Properties.Resources.Exit;
             this.ExitButton.ImageRotate = 0F;
             this.ExitButton.Location = new System.Drawing.Point(843, 15);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(4);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.ExitButton.Size = new System.Drawing.Size(40, 37);
@@ -217,10 +195,10 @@ namespace NT106
             this.guna2CirclePictureBox1.Image = global::NT106.Properties.Resources.Avatar;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(583, 92);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(267, 246);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(250, 250);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 14;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -280,7 +258,6 @@ namespace NT106
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(899, 535);
-            this.Controls.Add(this.NicknameTextBox);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.guna2CirclePictureBox1);
@@ -325,6 +302,5 @@ namespace NT106
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox ExitButton;
         private Guna.UI2.WinForms.Guna2CirclePictureBox BackButton;
-        private Guna.UI2.WinForms.Guna2TextBox NicknameTextBox;
     }
 }
