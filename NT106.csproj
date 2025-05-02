@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,23 +52,78 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="ChessLogic.cs" />
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="GameForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GameForm.Designer.cs">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomepageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomepageForm.Designer.cs">
+      <DependentUpon>HomepageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAPI.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileForm.Designer.cs">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RegisterAPI.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomForm.Designer.cs">
+      <DependentUpon>RoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserData.cs" />
+    <EmbeddedResource Include="GameForm.resx">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomepageForm.resx">
+      <DependentUpon>HomepageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileForm.resx">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomForm.resx">
+      <DependentUpon>RoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +136,87 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\LoginForm\Password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\LoginForm\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\LoginForm\ChessIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\RegisterForm\Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\General\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\General\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\Mic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\Chishiya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\Arisu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\Kuzuryu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\bb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\bk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\bn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\bp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\bq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\br.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\wb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\wk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\wn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\wp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\wq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\wr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\ProfileForm\Fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\ProfileForm\Handshake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\ProfileForm\Boring.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\GameForm\Mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\RegisterForm\Avatar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
