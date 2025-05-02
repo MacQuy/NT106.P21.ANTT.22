@@ -72,13 +72,13 @@
             this.UsernameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UsernameTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.UsernameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UsernameTextbox.Location = new System.Drawing.Point(207, 118);
-            this.UsernameTextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.UsernameTextbox.Location = new System.Drawing.Point(155, 96);
+            this.UsernameTextbox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.UsernameTextbox.Name = "UsernameTextbox";
             this.UsernameTextbox.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.UsernameTextbox.PlaceholderText = "";
             this.UsernameTextbox.SelectedText = "";
-            this.UsernameTextbox.Size = new System.Drawing.Size(423, 48);
+            this.UsernameTextbox.Size = new System.Drawing.Size(317, 39);
             this.UsernameTextbox.TabIndex = 16;
             // 
             // AvatarButton
@@ -91,10 +91,10 @@
             this.AvatarButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
             this.AvatarButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.AvatarButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(241)))));
-            this.AvatarButton.Location = new System.Drawing.Point(1194, 420);
-            this.AvatarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AvatarButton.Location = new System.Drawing.Point(896, 341);
+            this.AvatarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AvatarButton.Name = "AvatarButton";
-            this.AvatarButton.Size = new System.Drawing.Size(244, 49);
+            this.AvatarButton.Size = new System.Drawing.Size(183, 40);
             this.AvatarButton.TabIndex = 17;
             this.AvatarButton.Text = "Upload your avatar";
             // 
@@ -108,10 +108,10 @@
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(241)))));
-            this.guna2Button1.Location = new System.Drawing.Point(683, 117);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button1.Location = new System.Drawing.Point(512, 95);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(244, 49);
+            this.guna2Button1.Size = new System.Drawing.Size(183, 40);
             this.guna2Button1.TabIndex = 18;
             this.guna2Button1.Text = "Edit";
             // 
@@ -120,9 +120,10 @@
             this.Title.AutoSize = true;
             this.Title.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Title.Location = new System.Drawing.Point(144, 15);
+            this.Title.Location = new System.Drawing.Point(108, 12);
+            this.Title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(178, 72);
+            this.Title.Size = new System.Drawing.Size(146, 57);
             this.Title.TabIndex = 19;
             this.Title.Text = "Profile";
             // 
@@ -131,10 +132,9 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(16, 118);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(12, 96);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(146, 38);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(122, 31);
             this.guna2HtmlLabel1.TabIndex = 80;
             this.guna2HtmlLabel1.Text = "Username";
             // 
@@ -143,10 +143,9 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(16, 209);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(12, 170);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(143, 38);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(118, 31);
             this.guna2HtmlLabel3.TabIndex = 82;
             this.guna2HtmlLabel3.Text = "Password";
             // 
@@ -160,10 +159,10 @@
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(241)))));
-            this.guna2Button3.Location = new System.Drawing.Point(683, 198);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button3.Location = new System.Drawing.Point(512, 161);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(244, 49);
+            this.guna2Button3.Size = new System.Drawing.Size(183, 40);
             this.guna2Button3.TabIndex = 84;
             this.guna2Button3.Text = "Edit";
             // 
@@ -179,13 +178,13 @@
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(207, 199);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox2.Location = new System.Drawing.Point(155, 162);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(423, 48);
+            this.guna2TextBox2.Size = new System.Drawing.Size(317, 39);
             this.guna2TextBox2.TabIndex = 83;
             // 
             // guna2TextBox3
@@ -200,13 +199,13 @@
             this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(207, 282);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox3.Location = new System.Drawing.Point(155, 229);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox3.PlaceholderText = "New Password";
             this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(423, 48);
+            this.guna2TextBox3.Size = new System.Drawing.Size(317, 39);
             this.guna2TextBox3.TabIndex = 85;
             // 
             // guna2Button4
@@ -219,10 +218,10 @@
             this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(70)))), ((int)(((byte)(84)))));
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(241)))));
-            this.guna2Button4.Location = new System.Drawing.Point(1231, 821);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button4.Location = new System.Drawing.Point(923, 667);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(244, 49);
+            this.guna2Button4.Size = new System.Drawing.Size(183, 40);
             this.guna2Button4.TabIndex = 86;
             this.guna2Button4.Text = "Apply";
             // 
@@ -231,10 +230,9 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(21, 517);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(16, 420);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(152, 38);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(123, 31);
             this.guna2HtmlLabel4.TabIndex = 87;
             this.guna2HtmlLabel4.Text = "Win match";
             // 
@@ -243,10 +241,9 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(344, 517);
-            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(258, 420);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(169, 38);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(139, 31);
             this.guna2HtmlLabel5.TabIndex = 88;
             this.guna2HtmlLabel5.Text = "Draw match";
             // 
@@ -255,10 +252,9 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(683, 517);
-            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(512, 420);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(165, 38);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(136, 31);
             this.guna2HtmlLabel6.TabIndex = 89;
             this.guna2HtmlLabel6.Text = "Lose match";
             // 
@@ -267,10 +263,9 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(96, 593);
-            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(72, 482);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(39, 38);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(31, 31);
             this.guna2HtmlLabel7.TabIndex = 90;
             this.guna2HtmlLabel7.Text = "20";
             // 
@@ -279,10 +274,9 @@
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(419, 593);
-            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(314, 482);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(21, 38);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(17, 31);
             this.guna2HtmlLabel8.TabIndex = 92;
             this.guna2HtmlLabel8.Text = "1";
             // 
@@ -291,10 +285,9 @@
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(757, 593);
-            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(568, 482);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(21, 38);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(17, 31);
             this.guna2HtmlLabel9.TabIndex = 94;
             this.guna2HtmlLabel9.Text = "0";
             // 
@@ -303,10 +296,9 @@
             this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox3.Image = global::NT106.Properties.Resources.Boring;
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(683, 581);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(512, 472);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(67, 62);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(50, 50);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox3.TabIndex = 95;
             this.guna2PictureBox3.TabStop = false;
@@ -317,10 +309,9 @@
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = global::NT106.Properties.Resources.Handshake;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(344, 581);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(258, 472);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(67, 62);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(50, 50);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox2.TabIndex = 93;
             this.guna2PictureBox2.TabStop = false;
@@ -331,10 +322,9 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::NT106.Properties.Resources.Fire;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(21, 581);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(16, 472);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(67, 62);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(50, 50);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 91;
             this.guna2PictureBox1.TabStop = false;
@@ -344,11 +334,10 @@
             // 
             this.BackButton.Image = global::NT106.Properties.Resources.Back;
             this.BackButton.ImageRotate = 0F;
-            this.BackButton.Location = new System.Drawing.Point(16, 14);
-            this.BackButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BackButton.Location = new System.Drawing.Point(12, 11);
             this.BackButton.Name = "BackButton";
             this.BackButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.BackButton.Size = new System.Drawing.Size(75, 70);
+            this.BackButton.Size = new System.Drawing.Size(56, 57);
             this.BackButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BackButton.TabIndex = 26;
             this.BackButton.TabStop = false;
@@ -357,10 +346,10 @@
             // 
             this.ChessIcon.Image = global::NT106.Properties.Resources.ChessIcon;
             this.ChessIcon.ImageRotate = 0F;
-            this.ChessIcon.Location = new System.Drawing.Point(344, 14);
-            this.ChessIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ChessIcon.Location = new System.Drawing.Point(258, 11);
+            this.ChessIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ChessIcon.Name = "ChessIcon";
-            this.ChessIcon.Size = new System.Drawing.Size(72, 71);
+            this.ChessIcon.Size = new System.Drawing.Size(54, 58);
             this.ChessIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ChessIcon.TabIndex = 20;
             this.ChessIcon.TabStop = false;
@@ -369,11 +358,10 @@
             // 
             this.guna2CirclePictureBox1.Image = global::NT106.Properties.Resources.Avatar;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1139, 15);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(856, 53);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(350, 350);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(250, 250);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 15;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -382,21 +370,20 @@
             // 
             this.ExitButton.Image = global::NT106.Properties.Resources.Exit;
             this.ExitButton.ImageRotate = 0F;
-            this.ExitButton.Location = new System.Drawing.Point(1499, 15);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExitButton.Location = new System.Drawing.Point(1124, 12);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.ExitButton.Size = new System.Drawing.Size(40, 37);
+            this.ExitButton.Size = new System.Drawing.Size(30, 30);
             this.ExitButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ExitButton.TabIndex = 96;
             this.ExitButton.TabStop = false;
             // 
             // ProfileForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(1555, 884);
+            this.ClientSize = new System.Drawing.Size(1166, 718);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.guna2PictureBox3);
             this.Controls.Add(this.guna2HtmlLabel9);
@@ -421,7 +408,6 @@
             this.Controls.Add(this.UsernameTextbox);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ProfileForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProfileForm";
