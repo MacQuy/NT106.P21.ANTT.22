@@ -35,15 +35,15 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PasswordTextbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.NewPwTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.WinMatch = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DrawMatch = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LoseMatch = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -70,13 +70,14 @@
             this.UsernameTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UsernameTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UsernameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UsernameTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.UsernameTextbox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UsernameTextbox.Location = new System.Drawing.Point(155, 96);
             this.UsernameTextbox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.UsernameTextbox.Name = "UsernameTextbox";
             this.UsernameTextbox.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.UsernameTextbox.PlaceholderText = "";
+            this.UsernameTextbox.ReadOnly = true;
             this.UsernameTextbox.SelectedText = "";
             this.UsernameTextbox.Size = new System.Drawing.Size(317, 39);
             this.UsernameTextbox.TabIndex = 16;
@@ -92,7 +93,7 @@
             this.AvatarButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.AvatarButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(241)))));
             this.AvatarButton.Location = new System.Drawing.Point(896, 341);
-            this.AvatarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AvatarButton.Margin = new System.Windows.Forms.Padding(2);
             this.AvatarButton.Name = "AvatarButton";
             this.AvatarButton.Size = new System.Drawing.Size(183, 40);
             this.AvatarButton.TabIndex = 17;
@@ -109,7 +110,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(241)))));
             this.guna2Button1.Location = new System.Drawing.Point(512, 95);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(183, 40);
             this.guna2Button1.TabIndex = 18;
@@ -160,53 +161,55 @@
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(241)))));
             this.guna2Button3.Location = new System.Drawing.Point(512, 161);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(183, 40);
             this.guna2Button3.TabIndex = 84;
             this.guna2Button3.Text = "Edit";
             // 
-            // guna2TextBox2
+            // PasswordTextbox
             // 
-            this.guna2TextBox2.BorderRadius = 10;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(155, 162);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(317, 39);
-            this.guna2TextBox2.TabIndex = 83;
+            this.PasswordTextbox.BorderRadius = 10;
+            this.PasswordTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PasswordTextbox.DefaultText = "";
+            this.PasswordTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PasswordTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PasswordTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTextbox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTextbox.Location = new System.Drawing.Point(155, 162);
+            this.PasswordTextbox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.PasswordTextbox.Name = "PasswordTextbox";
+            this.PasswordTextbox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.PasswordTextbox.PlaceholderText = "";
+            this.PasswordTextbox.ReadOnly = true;
+            this.PasswordTextbox.SelectedText = "";
+            this.PasswordTextbox.Size = new System.Drawing.Size(317, 39);
+            this.PasswordTextbox.TabIndex = 83;
             // 
-            // guna2TextBox3
+            // NewPwTextbox
             // 
-            this.guna2TextBox3.BorderRadius = 10;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(155, 229);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox3.PlaceholderText = "New Password";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(317, 39);
-            this.guna2TextBox3.TabIndex = 85;
+            this.NewPwTextbox.BorderRadius = 10;
+            this.NewPwTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NewPwTextbox.DefaultText = "";
+            this.NewPwTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.NewPwTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.NewPwTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NewPwTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NewPwTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NewPwTextbox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewPwTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NewPwTextbox.Location = new System.Drawing.Point(155, 229);
+            this.NewPwTextbox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.NewPwTextbox.Name = "NewPwTextbox";
+            this.NewPwTextbox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.NewPwTextbox.PlaceholderText = "New Password";
+            this.NewPwTextbox.SelectedText = "";
+            this.NewPwTextbox.Size = new System.Drawing.Size(317, 39);
+            this.NewPwTextbox.TabIndex = 85;
+            this.NewPwTextbox.Visible = false;
             // 
             // guna2Button4
             // 
@@ -219,7 +222,7 @@
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(241)))));
             this.guna2Button4.Location = new System.Drawing.Point(923, 667);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(183, 40);
             this.guna2Button4.TabIndex = 86;
@@ -258,38 +261,38 @@
             this.guna2HtmlLabel6.TabIndex = 89;
             this.guna2HtmlLabel6.Text = "Lose match";
             // 
-            // guna2HtmlLabel7
+            // WinMatch
             // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(72, 482);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(31, 31);
-            this.guna2HtmlLabel7.TabIndex = 90;
-            this.guna2HtmlLabel7.Text = "20";
+            this.WinMatch.BackColor = System.Drawing.Color.Transparent;
+            this.WinMatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WinMatch.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.WinMatch.Location = new System.Drawing.Point(72, 482);
+            this.WinMatch.Name = "WinMatch";
+            this.WinMatch.Size = new System.Drawing.Size(3, 2);
+            this.WinMatch.TabIndex = 90;
+            this.WinMatch.Text = null;
             // 
-            // guna2HtmlLabel8
+            // DrawMatch
             // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(314, 482);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(17, 31);
-            this.guna2HtmlLabel8.TabIndex = 92;
-            this.guna2HtmlLabel8.Text = "1";
+            this.DrawMatch.BackColor = System.Drawing.Color.Transparent;
+            this.DrawMatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DrawMatch.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.DrawMatch.Location = new System.Drawing.Point(314, 482);
+            this.DrawMatch.Name = "DrawMatch";
+            this.DrawMatch.Size = new System.Drawing.Size(3, 2);
+            this.DrawMatch.TabIndex = 92;
+            this.DrawMatch.Text = null;
             // 
             // guna2HtmlLabel9
             // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(568, 482);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(17, 31);
-            this.guna2HtmlLabel9.TabIndex = 94;
-            this.guna2HtmlLabel9.Text = "0";
+            this.LoseMatch.BackColor = System.Drawing.Color.Transparent;
+            this.LoseMatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoseMatch.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.LoseMatch.Location = new System.Drawing.Point(568, 482);
+            this.LoseMatch.Name = "guna2HtmlLabel9";
+            this.LoseMatch.Size = new System.Drawing.Size(3, 2);
+            this.LoseMatch.TabIndex = 94;
+            this.LoseMatch.Text = null;
             // 
             // guna2PictureBox3
             // 
@@ -347,7 +350,7 @@
             this.ChessIcon.Image = global::NT106.Properties.Resources.ChessIcon;
             this.ChessIcon.ImageRotate = 0F;
             this.ChessIcon.Location = new System.Drawing.Point(258, 11);
-            this.ChessIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ChessIcon.Margin = new System.Windows.Forms.Padding(2);
             this.ChessIcon.Name = "ChessIcon";
             this.ChessIcon.Size = new System.Drawing.Size(54, 58);
             this.ChessIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -356,7 +359,6 @@
             // 
             // guna2CirclePictureBox1
             // 
-            this.guna2CirclePictureBox1.Image = global::NT106.Properties.Resources.Avatar;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(856, 53);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
@@ -386,18 +388,18 @@
             this.ClientSize = new System.Drawing.Size(1166, 718);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.guna2PictureBox3);
-            this.Controls.Add(this.guna2HtmlLabel9);
+            this.Controls.Add(this.LoseMatch);
             this.Controls.Add(this.guna2PictureBox2);
-            this.Controls.Add(this.guna2HtmlLabel8);
+            this.Controls.Add(this.DrawMatch);
             this.Controls.Add(this.guna2PictureBox1);
-            this.Controls.Add(this.guna2HtmlLabel7);
+            this.Controls.Add(this.WinMatch);
             this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2Button4);
-            this.Controls.Add(this.guna2TextBox3);
+            this.Controls.Add(this.NewPwTextbox);
             this.Controls.Add(this.guna2Button3);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.PasswordTextbox);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.BackButton);
@@ -435,18 +437,18 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox PasswordTextbox;
+        private Guna.UI2.WinForms.Guna2TextBox NewPwTextbox;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2HtmlLabel WinMatch;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DrawMatch;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LoseMatch;
         private Guna.UI2.WinForms.Guna2CirclePictureBox ExitButton;
     }
 }

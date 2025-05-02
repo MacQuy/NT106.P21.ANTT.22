@@ -43,7 +43,7 @@ namespace NT106
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ProfileForm profileForm = new ProfileForm(this);
+            ProfileForm profileForm = new ProfileForm(this, userData);
             profileForm.Show();
         }
 
