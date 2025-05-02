@@ -12,9 +12,11 @@ namespace NT106
 {
     public partial class HomepageForm : Form
     {
-        public HomepageForm()
+        private UserData userData;
+        public HomepageForm(UserData userData)
         {
             InitializeComponent();
+            this.userData = userData;
         }
 
         private void ExitButton_Click(object sender, EventArgs e)

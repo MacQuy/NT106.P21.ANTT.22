@@ -10,7 +10,7 @@ namespace NT106
 {
     internal class LoginAPI
     {
-        static public string ComputeSha256Hash(string rawData)
+        static private string ComputeSha256Hash(string rawData)
         {
             using (SHA256 sha256Hash = SHA256.Create())
             {

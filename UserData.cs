@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NT106
 {
-    internal class UserData
+    public class UserData
     {
         public string Username { get; set; }
         public string HashedPassword { get; set; }

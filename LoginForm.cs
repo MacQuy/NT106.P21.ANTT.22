@@ -45,10 +45,9 @@ namespace NT106
             {
                 UserData userData = new UserData();
                 userData = LoginAPI.getUserData(username);
-                MessageBox.Show(userData.Username);
-                /*HomepageForm homepage = new HomepageForm();
+                HomepageForm homepage = new HomepageForm(userData);
                 this.Hide();
-                homepage.Show();*/
+                homepage.Show();
             }
         }
     }

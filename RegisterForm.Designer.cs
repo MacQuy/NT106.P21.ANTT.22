@@ -38,14 +38,15 @@ namespace NT106
             this.AvatarButton = new Guna.UI2.WinForms.Guna2Button();
             this.BackButton = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ExitButton = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.Avatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ChessIcon = new Guna.UI2.WinForms.Guna2PictureBox();
             this.CheckImg = new Guna.UI2.WinForms.Guna2PictureBox();
             this.UserImg = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PassImg = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ErrorString = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.BackButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Avatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChessIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserImg)).BeginInit();
@@ -122,6 +123,7 @@ namespace NT106
             this.RegisterButton.Size = new System.Drawing.Size(180, 46);
             this.RegisterButton.TabIndex = 5;
             this.RegisterButton.Text = "Register";
+            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
             // ConfirmTextBox
             // 
@@ -161,6 +163,7 @@ namespace NT106
             this.AvatarButton.Size = new System.Drawing.Size(180, 46);
             this.AvatarButton.TabIndex = 11;
             this.AvatarButton.Text = "Upload your avatar";
+            this.AvatarButton.Click += new System.EventHandler(this.AvatarButton_Click);
             // 
             // BackButton
             // 
@@ -190,18 +193,17 @@ namespace NT106
             this.ExitButton.TabStop = false;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
-            // guna2CirclePictureBox1
+            // Avatar
             // 
-            this.guna2CirclePictureBox1.Image = global::NT106.Properties.Resources.Avatar;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(583, 92);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(250, 250);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 14;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.Avatar.ImageRotate = 0F;
+            this.Avatar.Location = new System.Drawing.Point(583, 92);
+            this.Avatar.Margin = new System.Windows.Forms.Padding(4);
+            this.Avatar.Name = "Avatar";
+            this.Avatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.Avatar.Size = new System.Drawing.Size(250, 250);
+            this.Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Avatar.TabIndex = 14;
+            this.Avatar.TabStop = false;
             // 
             // ChessIcon
             // 
@@ -252,15 +254,27 @@ namespace NT106
             this.PassImg.TabIndex = 7;
             this.PassImg.TabStop = false;
             // 
+            // ErrorString
+            // 
+            this.ErrorString.BackColor = System.Drawing.Color.Transparent;
+            this.ErrorString.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ErrorString.ForeColor = System.Drawing.Color.Red;
+            this.ErrorString.Location = new System.Drawing.Point(111, 334);
+            this.ErrorString.Name = "ErrorString";
+            this.ErrorString.Size = new System.Drawing.Size(3, 2);
+            this.ErrorString.TabIndex = 17;
+            this.ErrorString.Text = null;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(899, 535);
+            this.Controls.Add(this.ErrorString);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.ExitButton);
-            this.Controls.Add(this.guna2CirclePictureBox1);
+            this.Controls.Add(this.Avatar);
             this.Controls.Add(this.ChessIcon);
             this.Controls.Add(this.AvatarButton);
             this.Controls.Add(this.CheckImg);
@@ -278,7 +292,7 @@ namespace NT106
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.BackButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Avatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChessIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserImg)).EndInit();
@@ -299,8 +313,9 @@ namespace NT106
         private Guna.UI2.WinForms.Guna2PictureBox CheckImg;
         private Guna.UI2.WinForms.Guna2Button AvatarButton;
         private Guna.UI2.WinForms.Guna2PictureBox ChessIcon;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox Avatar;
         private Guna.UI2.WinForms.Guna2CirclePictureBox ExitButton;
         private Guna.UI2.WinForms.Guna2CirclePictureBox BackButton;
+        private Guna.UI2.WinForms.Guna2HtmlLabel ErrorString;
     }
 }

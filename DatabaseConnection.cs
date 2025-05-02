@@ -43,7 +43,6 @@ namespace NT106
                 try
                 {
                     connection.Open();
-                    MessageBox.Show("Connected successfully!");
                 }
                 catch (Exception ex)
                 {
