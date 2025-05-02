@@ -30,10 +30,10 @@
         {
             this.Title = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Username = new System.Windows.Forms.Label();
             this.SingleButton = new Guna.UI2.WinForms.Guna2Button();
             this.MultiButton = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.Avatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ExitButton = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ChessIcon = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox33 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -68,7 +68,7 @@
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Avatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChessIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox33)).BeginInit();
@@ -129,17 +129,16 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Welcome back";
             // 
-            // label2
+            // Username
             // 
-            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label2.Location = new System.Drawing.Point(15, 219);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(220, 45);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Chishiya";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Username.Font = new System.Drawing.Font("Monotype Corsiva", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Username.Location = new System.Drawing.Point(15, 219);
+            this.Username.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Username.Name = "Username";
+            this.Username.Size = new System.Drawing.Size(220, 45);
+            this.Username.TabIndex = 17;
+            this.Username.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SingleButton
             // 
@@ -177,18 +176,17 @@
             this.MultiButton.Text = "Multiplayer mode";
             this.MultiButton.Click += new System.EventHandler(this.MultiButton_Click);
             // 
-            // guna2CirclePictureBox1
+            // Avatar
             // 
-            this.guna2CirclePictureBox1.Image = global::NT106.Properties.Resources.Avatar;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(73, 40);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 15;
-            this.guna2CirclePictureBox1.TabStop = false;
-            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
+            this.Avatar.ImageRotate = 0F;
+            this.Avatar.Location = new System.Drawing.Point(73, 40);
+            this.Avatar.Name = "Avatar";
+            this.Avatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.Avatar.Size = new System.Drawing.Size(100, 100);
+            this.Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Avatar.TabIndex = 15;
+            this.Avatar.TabStop = false;
+            this.Avatar.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
             // ExitButton
             // 
@@ -671,9 +669,9 @@
             this.Controls.Add(this.guna2PictureBox18);
             this.Controls.Add(this.MultiButton);
             this.Controls.Add(this.SingleButton);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Username);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2CirclePictureBox1);
+            this.Controls.Add(this.Avatar);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.ChessIcon);
             this.Controls.Add(this.Title);
@@ -681,7 +679,7 @@
             this.Name = "HomepageForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomepageForm";
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Avatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChessIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox33)).EndInit();
@@ -726,9 +724,9 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox ExitButton;
         private Guna.UI2.WinForms.Guna2PictureBox ChessIcon;
         private System.Windows.Forms.Label Title;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox Avatar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Username;
         private Guna.UI2.WinForms.Guna2Button SingleButton;
         private Guna.UI2.WinForms.Guna2Button MultiButton;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox33;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace NT106
         {
             InitializeComponent();
             this.userData = userData;
+            LoadUserData();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -43,6 +45,15 @@ namespace NT106
             this.Hide();
             ProfileForm profileForm = new ProfileForm(this);
             profileForm.Show();
+        }
+
+        private void LoadUserData()
+        {
+            Username.Text = userData.Username;
+            using (MemoryStream ms = new MemoryStream(userData.Img))
+            {
+                Avatar.Image = Image.FromStream(ms);
+            }
         }
     }
 }
