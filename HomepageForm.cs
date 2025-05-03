@@ -40,7 +40,7 @@ namespace NT106
             roomForm.Show();
         }
 
-        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        private void AvatarClick(object sender, EventArgs e)
         {
             this.Hide();
             ProfileForm profileForm = new ProfileForm(this, userData);

@@ -186,7 +186,7 @@
             this.Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Avatar.TabIndex = 15;
             this.Avatar.TabStop = false;
-            this.Avatar.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
+            this.Avatar.Click += new System.EventHandler(this.AvatarClick);
             // 
             // ExitButton
             // 
