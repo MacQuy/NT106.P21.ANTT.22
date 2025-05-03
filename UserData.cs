@@ -8,6 +8,7 @@ namespace NT106
 {
     public class UserData
     {
+        public int Id { get; set; }
         public string Username { get; set; }
         public string HashedPassword { get; set; }
         public byte[] Img { get; set; }
