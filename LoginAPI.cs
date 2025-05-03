@@ -10,28 +10,13 @@ namespace NT106
 {
     internal class LoginAPI
     {
-        static private string ComputeSha256Hash(string rawData)
-        {
-            using (SHA256 sha256Hash = SHA256.Create())
-            {
-                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(rawData));
-
-                StringBuilder builder = new StringBuilder();
-                foreach (byte b in bytes)
-                {
-                    builder.Append(b.ToString("x2"));
-                }
-                return builder.ToString();
-            }
-        }
-
         static public string Login(string username, string password)
         {
             if (username == "" || password == "") return "*Missing information";
             else
             {
                 int count;
-                string hashedpw = ComputeSha256Hash(password);
+                string hashedpw = SHA256Compute.ComputeSha256Hash(password);
                 string query = "SELECT COUNT(*) FROM Users WHERE Username = @username AND Hashedpw = @password";
                 using (SqlConnection conn = new SqlConnection(DatabaseConnection.connectionString))
                 {
@@ -54,7 +39,7 @@ namespace NT106
 
         static public UserData getUserData(string username)
         {
-            string query = "SELECT Username, Hashedpw, Img, Win, Draw, Lose FROM Users WHERE Username = @username";
+            string query = "SELECT ID, Username, Hashedpw, Img, Win, Draw, Lose FROM Users WHERE Username = @username";
             UserData data = new UserData();
             using (SqlConnection conn = new SqlConnection(DatabaseConnection.connectionString))
             {
@@ -69,6 +54,7 @@ namespace NT106
                         {
                             data = new UserData
                             {
+                                Id = Convert.ToInt32(reader["ID"]),
                                 Username = reader["Username"].ToString(),
                                 HashedPassword = reader["Hashedpw"].ToString(),
                                 Img = reader["Img"] != DBNull.Value ? (byte[])reader["Img"] : null,
