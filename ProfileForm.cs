@@ -15,11 +15,15 @@ namespace NT106
     {
         private Form previous;
         private UserData userData;
+        private bool isEditUsername, isEditPassword, isEditAvatar;
         public ProfileForm(Form previous, UserData userData)
         {
             InitializeComponent();
             this.previous = previous;
             this.userData = userData;
+            isEditUsername = false;
+            isEditPassword = false;
+            isEditAvatar = false;
             LoadUserData();
         }
 
@@ -46,15 +50,72 @@ namespace NT106
             previous.Show();
         }
 
-        private void EditUsername_Click(object sender, EventArgs e)
-        {
-            UsernameTextbox.ReadOnly = false;
-        }
-
         private void EditPassword_Click(object sender, EventArgs e)
         {
-            PasswordTextbox.ReadOnly = false;
-            NewPwTextbox.Visible = true;
+            isEditPassword = !isEditPassword;
+            PasswordTextbox.ReadOnly = !PasswordTextbox.ReadOnly;
+            NewPwTextbox.Visible = !NewPwTextbox.Visible;
+        }
+
+        private void ApplyButton_Click(object sender, EventArgs e)
+        {
+            if (isEditUsername)
+            {
+                if (UsernameTextbox.Text == userData.Username)
+                {
+                    ErrorString.Text = "*Your new username is your old username";
+                    return;
+                }
+                
+                if (UsernameTextbox.Text == "")
+                {
+                    ErrorString.Text = "*Your new username must not be blank";
+                    return;
+                }
+            }
+
+            if (isEditPassword)
+            {
+                if (SHA256Compute.ComputeSha256Hash(PasswordTextbox.Text) != userData.HashedPassword)
+                {
+                    ErrorString.Text = "*Incorrect password";
+                    return;
+                }
+
+                if (NewPwTextbox.Text == "")
+                {
+                    ErrorString.Text = "*New password must not be blank";
+                    return;
+                }
+
+                if (PasswordTextbox.Text == NewPwTextbox.Text)
+                {
+                    ErrorString.Text = "*Your new password is your old password";
+                    return;
+                }
+            }
+
+            if (isEditAvatar)
+            {
+                byte[] data;
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    Avatar.Image.Save(ms, Avatar.Image.RawFormat);
+                    data = ms.ToArray();
+                }
+
+                if (data == userData.Img)
+                {
+                    ErrorString.Text = "*Your uploaded photo is already your avatar";
+                    return;
+                }
+            }
+
+            ErrorString.Text = "";
+
+            if (isEditUsername) UpdateProfileAPI.UpdateUsername(userData, UsernameTextbox.Text);
+            if (isEditPassword) UpdateProfileAPI.UpdatePassword(userData, NewPwTextbox.Text);
+            if (isEditAvatar) UpdateProfileAPI.UpdateAvatar(userData, Avatar.Image);
         }
 
         private void AvatarButton_Click(object sender, EventArgs e)
@@ -73,6 +134,13 @@ namespace NT106
                     Avatar.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
+            isEditAvatar = true;
+        }
+
+        private void EditUsername_Click(object sender, EventArgs e)
+        {
+            UsernameTextbox.ReadOnly = !UsernameTextbox.ReadOnly;
+            isEditUsername = !isEditUsername;
         }
     }
 }

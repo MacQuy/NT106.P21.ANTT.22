@@ -18,7 +18,7 @@ namespace NT106
         {
             InitializeComponent();
             this.userData = userData;
-            LoadUserData();
+            this.Activated += LoadUserData;
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace NT106
             profileForm.Show();
         }
 
-        private void LoadUserData()
+        private void LoadUserData(object sender, EventArgs e)
         {
             Username.Text = userData.Username;
             using (MemoryStream ms = new MemoryStream(userData.Img))
