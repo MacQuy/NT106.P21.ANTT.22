@@ -99,6 +99,8 @@
     <Compile Include="RoomForm.Designer.cs">
       <DependentUpon>RoomForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SHA256Compute.cs" />
+    <Compile Include="UpdateProfileAPI.cs" />
     <Compile Include="UserData.cs" />
     <EmbeddedResource Include="GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
